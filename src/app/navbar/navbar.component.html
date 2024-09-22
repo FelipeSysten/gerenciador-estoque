@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="navbar">
+  <span class="navbar-brand">
+    <mat-icon>inventory</mat-icon>
+    Controle de Estoque
+  </span>
+
+  <span class="navbar-links-spacer"></span>
+
+  <div class="navbar-links">
+    <button mat-button [routerLink]="['/']" routerLinkActive="active">Lista de Produtos</button>
+    <button mat-button [routerLink]="['/add']" routerLinkActive="active">Adicionar Produto</button>
+  </div>
+</mat-toolbar>

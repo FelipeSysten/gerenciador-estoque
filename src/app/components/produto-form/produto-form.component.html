@@ -1,0 +1,36 @@
+<section class="produto-form">
+
+<form [formGroup]="produtoForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput id="nome" formControlName="nome" placeholder="Nome do produto">
+      <mat-error *ngIf="produtoForm.get('nome')?.hasError('required')">
+        Nome é obrigatório
+      </mat-error>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Quantidade</mat-label>
+      <input matInput id="quantidade" type="number" formControlName="quantidade" placeholder="Quantidade">
+      <mat-error *ngIf="produtoForm.get('quantidade')?.hasError('required')">
+        Quantidade é obrigatória
+      </mat-error>
+      <mat-error *ngIf="produtoForm.get('quantidade')?.hasError('min')">
+        A quantidade mínima é 1
+      </mat-error>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Preço</mat-label>
+      <input matInput id="preco" type="number" step="0.01" formControlName="preco" placeholder="Preço">
+      <mat-error *ngIf="produtoForm.get('preco')?.hasError('required')">
+        Preço é obrigatório
+      </mat-error>
+      <mat-error *ngIf="produtoForm.get('preco')?.hasError('min')">
+        O preço mínimo é R$ 0,01
+      </mat-error>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit" [disabled]="!produtoForm.valid">Adicionar Produto</button>
+  </form>
+</section>
