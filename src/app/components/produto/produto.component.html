@@ -1,11 +1,4 @@
-
-
-
-
 <table mat-table [dataSource]="produtos" class="mat-elevation-z8">
-
-  
-
   <!-- Nome Column -->
   <ng-container matColumnDef="nome">
     <th mat-header-cell *matHeaderCellDef> Nome </th>
@@ -24,16 +17,17 @@
     <td mat-cell *matCellDef="let produto"> {{produto.preco}} </td>
   </ng-container>
 
+  <!-- Ação Column -->
   <ng-container matColumnDef="acao">
     <th mat-header-cell *matHeaderCellDef> Ação </th>
     <td mat-cell *matCellDef="let produto">
       <button mat-icon-button color="warn" (click)="deleteProduto(produto.id)">
-        <a>delete</a>
+        <mat-icon>delete</mat-icon> <!-- Alterado para usar o ícone do Material -->
       </button>
     </td>
   </ng-container>
 
-  <!-- Define the header row and data row -->
+  <!-- Definindo as linhas do header e dos dados -->
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>

@@ -1,12 +1,6 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "nome": "Produto A",
-      "quantidade": 100,
-      "preco": 50
-    },
-    {
       "id": "2",
       "nome": "Produto B",
       "quantidade": 200,
@@ -65,6 +59,126 @@
       "nome": "Notebook",
       "quantidade": 500,
       "preco": 3000
+    },
+    {
+      "id": "acf5",
+      "nome": "Vitor teste salvar",
+      "quantidade": 500,
+      "preco": 450
+    },
+    {
+      "id": "5b91",
+      "nome": "Computador",
+      "quantidade": 50,
+      "preco": 43
+    },
+    {
+      "id": "68af",
+      "nome": "Caixa de som",
+      "quantidade": 80,
+      "preco": 120
+    },
+    {
+      "id": "bb88",
+      "nome": "suporte",
+      "quantidade": 89,
+      "preco": 4.6
+    },
+    {
+      "id": "9386",
+      "nome": "Camera",
+      "quantidade": 89,
+      "preco": 45
+    },
+    {
+      "id": "eac9",
+      "nome": "Televisão",
+      "quantidade": 55,
+      "preco": 12.56
+    },
+    {
+      "id": "5d0d",
+      "nome": "Biscoito",
+      "quantidade": 60,
+      "preco": 5
+    },
+    {
+      "id": "6bfb",
+      "nome": "ARROZ",
+      "quantidade": 30,
+      "preco": 2.3
+    },
+    {
+      "id": "800b",
+      "nome": "TODDY",
+      "quantidade": 5,
+      "preco": 6
+    },
+    {
+      "id": "f6ac",
+      "nome": "KAPPO",
+      "quantidade": 90,
+      "preco": 3
+    },
+    {
+      "id": "cd8f",
+      "nome": "DESIFETANTE",
+      "quantidade": 70,
+      "preco": 6
+    },
+    {
+      "id": "7356",
+      "nome": "DVD",
+      "quantidade": 90,
+      "preco": 8.3
+    },
+    {
+      "id": "9016",
+      "nome": "sofa",
+      "quantidade": 500,
+      "preco": 900
+    },
+    {
+      "id": "3229",
+      "nome": "Cama",
+      "quantidade": 1000,
+      "preco": 750
+    },
+    {
+      "id": "907e",
+      "nome": "Ventilador",
+      "quantidade": 600,
+      "preco": 150
+    },
+    {
+      "id": "bace",
+      "nome": "Mesa",
+      "quantidade": 900,
+      "preco": 800
+    },
+    {
+      "id": "b5f2",
+      "nome": "smatphone",
+      "quantidade": 658,
+      "preco": 802
+    },
+    {
+      "id": "5e78",
+      "nome": "Marmore",
+      "quantidade": 700,
+      "preco": 544
+    },
+    {
+      "id": "940d",
+      "nome": "Ferro de Passar",
+      "quantidade": 800,
+      "preco": 90
+    },
+    {
+      "id": "60b8",
+      "nome": "JBL",
+      "quantidade": 700,
+      "preco": 2
     }
   ]
 }

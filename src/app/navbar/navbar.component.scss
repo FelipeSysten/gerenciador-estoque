@@ -1,8 +1,15 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   background-color: #1976d2; /* Cor primária padrão do Angular Material */
+  height: 60px;
+
+  /* Responsividade para ajustar o espaçamento em telas menores */
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 
   .navbar-brand {
     display: flex;
@@ -10,9 +17,14 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
+    text-decoration: none;
 
     mat-icon {
       margin-right: 10px;
+    }
+
+    &:hover {
+      color: #e3f2fd; /* Cor de hover para dar destaque */
     }
   }
 
@@ -21,9 +33,16 @@
     align-items: center;
 
     button {
+      background: none;
+      border: none;
       color: white;
       font-weight: 600;
       margin-right: 15px;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
 
       &:last-child {
         margin-right: 0;
@@ -35,7 +54,25 @@
     }
   }
 
+  /* Para centralizar os links quando necessário */
   .navbar-links-spacer {
     flex: 1;
+  }
+
+  /* Responsividade para telas pequenas */
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      align-items: flex-start;
+
+      button {
+        margin-right: 0;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
